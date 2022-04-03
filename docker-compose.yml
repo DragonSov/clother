@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:14.2
+    volumes:
+      - /home/stanislav/PostgreSQL:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: "clother"
+      POSTGRES_USER: "stanislav"
+      POSTGRES_PASSWORD: "1qZLTZYqoJ7dMr2bnLAAdK9c"
